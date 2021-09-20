@@ -1,0 +1,123 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Agendamentos</title>
+</head>
+<body>
+    <header>
+        <div class="titulo-principal" id="titulo-principal">
+            <h1>Agendamentos</h1>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="principal">
+            <table id="tabela-principal" class="tabela-principal">
+                <thead>
+                    <tr class="tr-principal">
+                        <th class="th-nome">Nome</th>
+                        <th class="th-cpfCnpj">CPF / CNPJ</th>
+                        <th class="th-data">Data</th>
+                        <th class="th-horario">Horário</th>
+                        <th class="th-assunto">Assunto</th>
+                        <th class="th-contato">Contato Telefônico</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        
+        <div class="formulario">
+
+            <form id="form-adiciona">
+
+                <div class="div-form-nome">
+
+                    <fieldset>
+                        <label class="form-nome"  for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Nome Completo" maxlength="40">
+                    </fieldset>
+
+                </div>
+                
+                <div class="div-cpfCnpj">
+
+                    <fieldset>
+                        <label class="form-cpfCnpj"  for="cpfCnpj">CPF / CNPJ</label>
+                        <input type="number" name="cpfCnpj" id="cpfCnpj" required placeholder="Ex: 000-000-000-00" min="11" >
+                    </fieldset>
+
+                </div>
+
+                <div class="div-data">
+
+                    <fieldset>
+                        <label class="form-data"  for="diaData">Dia</label>
+                        <input type="number" name="diaData" class="data" required min="1" max="31">
+
+                        <label class="form-data"  for="mesData">Mês</label>
+                        <input type="number" name="mesData" class="data" required min="1" max="12">
+                    
+                    </fieldset>
+
+                </div>
+
+                <div class="div-horario">
+                    <fieldset class="fieldset-horario">
+                        
+                        <legend id="legend-horario">Horários disponíveis
+                            <select name="horario" id="horario" required>
+                                <option value="Selecionar">Selecionar</option>
+                                <option value="09:00h">09:00h</option>
+                                <option value="09:30h">09:30h</option>
+                                <option value="10:30h">10:30h</option>
+                                <option value="10:50h">10:50h</option>
+                                <option value="11:30h">11:30h</option>
+                                <option value="12:30h">12:30h</option>
+                                <option value="13:30h">13:30h</option>
+                                <option value="15:30h">15:30h</option>
+                            </select>
+                        </legend>
+                    </fieldset>
+                </div>
+
+                <div class="div-contato">
+
+                    <fieldset>
+
+                        <label for="contatoTelefonico">Contato Telefônico</label>
+                        <input type="number" name="contatoTelefonico" id="contato-telefonico" required placeholder="(XX) XXXXX-XXXX">
+
+                    </fieldset>
+
+                </div>
+
+                <div class="div-assunto">
+
+                    <fieldset>
+                        <label class="form-assunto"  for="assunto">Assunto</label>
+                        <input type="text" name="assunto" id="assunto" required placeholder="Ex: Abertura de Conta">
+                    </fieldset>
+
+                </div>
+
+                <div class="div-botao">
+                    <button type="button" class="botao-adicionar" id="botao">Enviar</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+
+    <script src="principal.js"></script>
+</body>
+
+<footer>
+
+</footer>
+</html>

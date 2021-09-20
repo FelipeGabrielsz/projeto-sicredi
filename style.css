@@ -1,0 +1,135 @@
+body{
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    
+}
+
+header {
+    border-bottom: 3px solid black;
+    background-color: #3fa110;
+    height: 5em;
+    color: black;
+    margin-bottom: 1em;
+}
+
+header h1 {
+    font-size: 2em;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.titulo-principal {
+    text-align: center;
+}
+
+table {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-left: 25%;
+    width: 50%;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    font-size: 15px;
+    text-align: center;
+}
+
+thead, th {
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #3fa110;
+}
+
+tbody, td { 
+    padding-top: 10px;
+    padding-bottom: 10px ;
+}
+
+.formulario {
+    margin-top: 5em;
+    margin-left: 25%;
+}
+
+label {
+    font-size: 15px;
+}
+
+input {
+    height: 25px;
+    margin-right: 10px;
+    margin-left: 2px;
+    font-size: 17px;
+}
+
+.div-form-nome {
+    margin-bottom: 2em;
+}
+
+#nome {
+    width: 50%;
+    
+}
+
+.div-cpfCnpj {
+    margin-top: 30px;
+}
+
+.div-data {
+    margin-top: 25px;
+}
+
+.data {
+    width: 70px;
+    display: inline;
+    margin-right: 60px;
+    margin-left: 05px;
+}
+
+.div-horario{
+    margin-top: 25px;
+}
+
+#horario {
+    margin-left: 25px ;
+}
+
+.div-contato{
+    margin-top: 25px;
+}
+
+.div-assunto{
+    margin-top: 20px;
+}
+
+#assunto {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.div-botao {
+    margin-top: 25px;
+}
+
+.botao-adicionar {
+    
+    background-color: #3fa110;
+    border: none;
+    height: 35px;
+    width: 100px;
+}
+
+.botao-adicionar:hover {
+    transform: scale(1.2);
+    transition: 0.2s all;
+}
+
+footer {
+    margin-top: 5em;
+    border-top: 3px solid black;
+    background-color: #3fa110;
+    height: 5em;
+    color: black;
+}
